@@ -1,0 +1,14 @@
+h1 {
+    font-size: 15px;
+}
+#timer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+h1 #timer {
+    align-items: baseline;
+}
+h1 h2 {
+    position: relative;
+}
