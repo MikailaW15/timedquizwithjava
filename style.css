@@ -1,14 +1,31 @@
 h1 {
+    display: flex;
     font-size: 15px;
+}
+h2 {
+    display: flex;
+    font-size: 15px;
+    padding-right: 10px;
+    margin: 10;
 }
 #timer {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
 }
-h1 #timer {
+label {
+    display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
-h1 h2 {
-    position: relative;
+button {
+    text-align: center;
 }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+  }
+
+  

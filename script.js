@@ -8,3 +8,4 @@ function timer(){
         }
     }, 1000);
 }
+$(":button").find(".start").css( "background-color": "red" )

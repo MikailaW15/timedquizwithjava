@@ -6,22 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timed Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <label>
-    <h1>View High Scores</h1>
+        <a href="" target="_blank">
+            <h1>View High Scores</h1>
+        </a>
 
     <div id="timer">
         <h2>Timer</h2>
         <p id="TimerDisplay">00:60</p>
         </div>
     </label>
+    
+    <button onclick="myFunction()" class='start'>Start</button>
 
+    <script>
+        function myFunction() {
+          alert("Let's get started!");
+        }
+        </script>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
 
 
 <div id="quiz"></div>
 <button id="submit">Submit Quiz</button>
-<div id="results"></div>
+<div id="results">Results</div>
+<script>
+    $( "button" ).on( "mouseover", function() {
+      $( this ).css( "color", "green" );
+    }); </script>
+
+<!-- setTimeout(function() {
+    event.target.style.color = "";
+  }, 500);
+}, false); -->
+
     <script src="script.js"></script>
 </body>
 </html>
