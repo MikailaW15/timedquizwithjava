@@ -8,12 +8,12 @@ function timer(){
         }
     }, 1000);
 }
-$(":button").find(".start").css( "background-color": "red" )
+$(":button").find(".start").css( "background-color", "red" )
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 	function showQuestions(questions, quizContainer){
-		var = output = [];
+		var questions = output = [];
         var answers;
         for (var i = 0; i < questions.length; i++){
             answers = [];
@@ -79,6 +79,9 @@ var myQuestions = [
         correctAnswer: 'b'
     }
 ];
+
+document.append("myQuestions")
+
 function displayQuestion() {
     questionContainer.innerHTML = myQuestions[0].question
     var answer1 = document.getElementById('answer1')
@@ -88,3 +91,4 @@ function displayQuestion() {
     answer2.innerHTML = myQuestions[0].answers.c
     answer3.innerHTML = myQuestions[0].answers.b
     }
+    $(".hide").hide("#quizContainer")
